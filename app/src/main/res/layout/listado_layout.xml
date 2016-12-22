@@ -2,10 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:background="@drawable/fondo6"
     android:layout_height="match_parent">
     <TextView
         android:layout_width="match_parent"
         android:text="AQUI SE SELESCCIONARA LA MUSICA"
+        android:textSize="22sp"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content" />
     <ScrollView
@@ -18,7 +22,7 @@
             <ListView
                 android:id="@+id/lvLista"
                 android:layout_width="match_parent"
-                android:layout_height="498dp"/>
+                android:layout_height="500dp"/>
         </LinearLayout>
     </ScrollView>
 
