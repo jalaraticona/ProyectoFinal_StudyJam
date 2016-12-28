@@ -5,15 +5,6 @@
     android:background="#0099cc"
     tools:context="com.androidbolivia.studyjamproject.FullscreenActivity">
 
-    <!-- The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc. -->
-    <ImageView
-        android:layout_width="match_parent"
-        android:src="@drawable/fondo5"
-        android:alpha="0.8"
-        android:scaleType="centerCrop"
-        android:layout_height="match_parent" />
     <TextView
         android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
@@ -26,33 +17,13 @@
         android:fontFamily="cursive"
         android:textSize="40sp"
         android:textStyle="bold" />
-
-    <!-- This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows. -->
-    <FrameLayout
+    <ImageView
+        android:id="@+id/ivAndroid"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true">
+        android:src="@drawable/fondo5"
+        android:alpha="0.8"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent" />
 
-        <LinearLayout
-            android:id="@+id/fullscreen_content_controls"
-            style="?metaButtonBarStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:background="@color/black_overlay"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent">
-
-            <Button
-                android:id="@+id/dummy_button"
-                style="?metaButtonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/dummy_button" />
-
-        </LinearLayout>
-    </FrameLayout>
 
 </FrameLayout>
